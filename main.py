@@ -8,6 +8,7 @@ cpu = random.choice(options)
 player = None
 while player not in options:
   player = input('Choose one of these options: R/P/S: ').upper()
+  print('Invalid')
   if player == cpu:
     print('You have chosen: '+ player)
     print('Computer has chosen: '+ cpu)
